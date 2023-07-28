@@ -1,4 +1,149 @@
 
+ pwd
+ git clone https://Vijay177@bitbucket.org/hello1bitbucket/hellobitbucket1.git
+cd hellobitbucket1/
+ls -a
+vim vijay.html
+git status
+git add .
+git commit -m "html file"
+git status
+git push origin master
+vim vijay.html
+git add .
+git commit -m "edit vijay.html"
+git push origin master
+git pull
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~ (main)
+$ pwd
+/c/Users/MKN
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~ (main)
+$ git clone https://Vijay177@bitbucket.org/hello1bitbucket/hellobitbucket1.git
+Cloning into 'hellobitbucket1'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), 1.17 KiB | 2.00 KiB/s, done.
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~ (main)
+$ cd hellobitbucket1/
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ ls
+HelloBitBucket1.txt  HelloWorld.txt
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ ls -a
+./  ../  .git/  .gitignore  HelloBitBucket1.txt  HelloWorld.txt
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ touch vijay.html
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ ls a-
+ls: cannot access 'a-': No such file or directory
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ ls -a
+./  ../  .git/  .gitignore  HelloBitBucket1.txt  HelloWorld.txt  vijay.html
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ vim vijay.htm
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ vim vijay.html
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ ls -a
+./  ../  .git/  .gitignore  HelloBitBucket1.txt  HelloWorld.txt  vijay.html
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        vijay.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ git add .
+warning: in the working copy of 'vijay.html', LF will be replaced by CRLF the next time Git touches it
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   vijay.html
+
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ git commit -m "html file"
+[master 5b03a26] html file
+ 1 file changed, 9 insertions(+)
+ create mode 100644 vijay.html
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+To https://bitbucket.org/hello1bitbucket/hellobitbucket1.git
+   e00aa7b..5b03a26  master -> master
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ vim vijay.html
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ git add .
+warning: in the working copy of 'vijay.html', LF will be replaced by CRLF the next time Git touches it
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ git commit -m "edit vijay.html"
+[master 5ec73b6] edit vijay.html
+ 1 file changed, 3 insertions(+)
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 290 bytes | 290.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+To https://bitbucket.org/hello1bitbucket/hellobitbucket1.git
+   5b03a26..5ec73b6  master -> master
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/hellobitbucket1 (master)
+$
+
+
+
+
+
+
+
+
+
 MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/MyGitRepo (master)
 $ pwd
 bash: $'\302\213\302\213pwd': command not found
