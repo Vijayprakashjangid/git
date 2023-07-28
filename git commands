@@ -1,0 +1,5 @@
+git init
+ls -a
+pwd
+touch (to create file)
+git status
