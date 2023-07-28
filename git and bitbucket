@@ -1,0 +1,174 @@
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/MyGitRepo (master)
+$ pwd
+bash: $'\302\213\302\213pwd': command not found
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/MyGitRepo (master)
+$ cd ..
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos (main)
+$ cd ..
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~ (main)
+$ pwd
+/c/Users/MKN
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~ (main)
+$ cd repos/
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos (main)
+$ git clone https://Vijay177@bitbucket.org/hello1bitbucket/hellobitbucket1.git
+Cloning into 'hellobitbucket1'...
+remote: Invalid credentials
+fatal: Authentication failed for 'https://bitbucket.org/hello1bitbucket/hellobitbucket1.git/'
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos (main)
+$ git clone https://Vijay177@bitbucket.org/hello1bitbucket/hellobitbucket1.git
+Cloning into 'hellobitbucket1'...
+remote: Invalid credentials
+fatal: Authentication failed for 'https://bitbucket.org/hello1bitbucket/hellobitbucket1.git/'
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos (main)
+$ git clone https://Vijay177@bitbucket.org/hello1bitbucket/hellobitbucket1.git
+Cloning into 'hellobitbucket1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 589 bytes | 3.00 KiB/s, done.
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos (main)
+$ cd hellobitbucket/
+bash: cd: hellobitbucket/: No such file or directory
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos (main)
+$ cd hello1bitbucket/
+bash: cd: hello1bitbucket/: No such file or directory
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos (main)
+$ cd hellobitbucket1/
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ ls
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ ls -a
+./  ../  .git/  .gitignore
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ touch HelloWorld.txt
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ vim HelloBitBucket1.txt
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        HelloBitBucket1.txt
+        HelloWorld.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git add .
+warning: in the working copy of 'HelloBitBucket1.txt', LF will be replaced by CRLF the next time Git touches it
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   HelloBitBucket1.txt
+        new file:   HelloWorld.txt
+
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git commit -m "files"
+[master 221549a] files
+ 2 files changed, 1 insertion(+)
+ create mode 100644 HelloBitBucket1.txt
+ create mode 100644 HelloWorld.txt
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 356 bytes | 178.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://bitbucket.org/hello1bitbucket/hellobitbucket1.git
+   6f0e9dd..221549a  master -> master
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ vim HelloWorld.txt
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git add .
+warning: in the working copy of 'HelloWorld.txt', LF will be replaced by CRLF the next time Git touches it
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git commit -m "edit helloworld"
+[master e00aa7b] edit helloworld
+ 1 file changed, 2 insertions(+)
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git push  origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 336 bytes | 33.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+To https://bitbucket.org/hello1bitbucket/hellobitbucket1.git
+   221549a..e00aa7b  master -> master
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ ^C
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git pull
+Already up to date.
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git fatch
+git: 'fatch' is not a git command. See 'git --help'.
+
+The most similar command is
+        fetch
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ gut marge
+bash: gut: command not found
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$ git murge
+git: 'murge' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+MKN@DESKTOP-HBNR5T0 MINGW64 ~/repos/hellobitbucket1 (master)
+$
