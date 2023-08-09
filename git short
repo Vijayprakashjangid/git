@@ -9,3 +9,7 @@ upload code on github
 git remote add origin https://github.com/Vijayprakashjangid/flutter-firebase-otp-varification.git
 
 git add . git commit -m "flutter fire otp" git log --oneline git push -u origin main
+
+Udamy
+UserID - onlinetraining@atcs.com
+Password - reactnative@12345
